@@ -1,5 +1,6 @@
 "use client";
 import { FaTools, FaCalendarAlt, FaMoneyBillWave } from "react-icons/fa";
+import Image from "next/image";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 
 const AboutSection = () => {
@@ -8,7 +9,7 @@ const AboutSection = () => {
       <div className="max-w-5xl mx-auto text-center space-y-4">
         <h2 className="text-4xl font-bold text-blue-400">À propos de M3AM Garage</h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          Depuis plus de 10 ans, M3AM Garage est votre partenaire de confiance pour l'entretien et la réparation automobile. 
+          Depuis plus de 10 ans, M3AM Garage est votre partenaire de confiance pour l&apos;entretien et la réparation automobile. 
           Notre expertise et notre passion pour les véhicules garantissent un service de qualité supérieure.
         </p>
       </div>
@@ -17,33 +18,36 @@ const AboutSection = () => {
       <div className="bg-gray-800 py-12 px-6 rounded-lg shadow-lg">
         <h3 className="text-4xl font-semibold text-blue-400 mb-8 text-center">Avant / Après</h3>
         <p className="text-gray-300 mb-8 text-center">
-            Découvrez la transformation spectaculaire de vos véhicules grâce à notre expertise et notre savoir-faire.
+          Découvrez la transformation spectaculaire de vos véhicules grâce à notre expertise et notre savoir-faire.
         </p>
-  <div className="flex flex-wrap justify-center gap-8">
-    <div className="relative group">
-      <img
-        src="/avant.png"
-        alt="Avant réparation"
-        className="w-96 h-96 rounded-xl shadow-lg transform transition-transform group-hover:scale-105"
-      />
-      <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
-        <span className="text-white font-bold text-2xl">Avant</span>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="relative group">
+            <Image
+              src="/avant.png"
+              alt="Avant réparation"
+              width={384}
+              height={384}
+              className="w-96 h-96 rounded-xl shadow-lg transform transition-transform group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+              <span className="text-white font-bold text-2xl">Avant</span>
+            </div>
+          </div>
+          <div className="relative group">
+            <Image
+              src="/apres.png"
+              alt="Après réparation"
+              width={384}
+              height={384}
+              className="w-96 h-96 rounded-xl shadow-lg transform transition-transform group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+              <span className="text-white font-bold text-2xl">Après</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="relative group">
-      <img
-        src="/apres.png"
-        alt="Après réparation"
-        className="w-96 h-96 rounded-xl shadow-lg transform transition-transform group-hover:scale-105"
-      />
-      <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
-        <span className="text-white font-bold text-2xl">Après</span>
-      </div>
-    </div>
-  </div>
-</div>
 
-      {/* FAQ rapide */}
       <div className="bg-gray-800 py-8 px-4 rounded-lg shadow-lg">
         <h3 className="text-3xl font-semibold text-blue-400 mb-6 text-center">Questions fréquentes</h3>
         <div className="max-w-3xl mx-auto space-y-6">
@@ -51,7 +55,7 @@ const AboutSection = () => {
             <FaCalendarAlt className="text-blue-400 mt-1" size={24} />
             <div>
               <strong className="block text-white">⏳ Combien de temps dure une réparation ?</strong>
-              <p className="text-gray-300">Entre 1 et 3 jours selon l’ampleur des dégâts.</p>
+              <p className="text-gray-300">Entre 1 et 3 jours selon l&apos;ampleur des dégâts.</p>
             </div>
           </div>
           <div className="flex items-start gap-4">

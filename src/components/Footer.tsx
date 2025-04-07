@@ -5,7 +5,7 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-bold text-white mb-4">À propos</h2>
             <p>
-              M3AM Garage est votre partenaire de confiance pour l'entretien et la réparation de vos véhicules. 
+              M3AM Garage est votre partenaire de confiance pour l&apos;entretien et la réparation de vos véhicules. 
               Nous offrons des services de qualité pour assurer votre sécurité sur la route.
             </p>
           </div>
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
   
           <div>
-            <h2 className="text-lg font-bold text-white mb-4">Horaires d'ouverture</h2>
+            <h2 className="text-lg font-bold text-white mb-4">Horaires d&apos;ouverture</h2>
             <ul>
               <li className="mb-2">Lundi - Vendredi : 9h00 - 18h00</li>
               <li className="mb-2">Samedi : 9h00 - 12h00</li>

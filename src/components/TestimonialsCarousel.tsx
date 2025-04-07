@@ -5,12 +5,12 @@ import { useRef, useState } from "react";
 const testimonials = [
   {
     name: "SOUOP, Willy",
-    text: "Excellent garage. J'ai froissé ma portière et mon aile arrière sur un pilier dans mon parking. Ce garage m'a été recommandé et j'y ai fait un tour. Accueil satisfaisant, service professionnel, la qualité du travail était au rendez-vous, ma voiture m'a été rendue comme neuve. J'y ai envoyé mon frère également pour le même niveau de satisfaction.",
+    text: "Excellent garage. J&apos;ai froissé ma portière et mon aile arrière sur un pilier dans mon parking. Ce garage m&apos;a été recommandé et j&apos;y ai fait un tour. Accueil satisfaisant, service professionnel, la qualité du travail était au rendez-vous, ma voiture m&apos;a été rendue comme neuve. J&apos;y ai envoyé mon frère également pour le même niveau de satisfaction.",
     rating: 5,
   },
   {
     name: "Clarisse Michel",
-    text: "Je recommande fortement ! Garagiste compétent et compréhensif ! Un travail rapide et efficace, n’hésitez pas !",
+    text: "Je recommande fortement ! Garagiste compétent et compréhensif ! Un travail rapide et efficace, n&apos;hésitez pas !",
     rating: 4,
   },
   {
@@ -73,7 +73,7 @@ const TestimonialsCarousel = () => {
               className="bg-gray-100 p-6 shadow-md rounded-xl text-center min-w-[300px] flex-shrink-0"
             >
               <p className="text-sm text-gray-600 italic leading-relaxed max-w-[250px] mx-auto line-clamp-3">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
               </p>
               {testimonial.text.length > 150 && (
                 <button
